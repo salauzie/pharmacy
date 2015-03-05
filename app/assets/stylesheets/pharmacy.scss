@@ -1,0 +1,31 @@
+.jumbotron.pharm {
+	background-image: image-url("pharmacy.jpg");
+	color: #8DA9C6;
+}
+
+.container.one {
+	background: rgba(248, 248, 255, .8);
+	border-radius: 5px;
+	margin: 0 auto;
+}
+
+body {
+	font-family: 'Josefin Slab';
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.3999996185303px;
+	background: #8DA9C6;
+	}
+
+.input,
+.verification,
+.production,
+.search {
+	background: rgba(248, 248, 255, .8);
+	border-radius: 5px;
+	margin: 0 auto;
+	max-width: 35%;
+	display: inline-block;
+	}
