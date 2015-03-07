@@ -1,0 +1,12 @@
+
+= @patient.first_name
+%br
+= @patient.last_name
+%br
+= @patient.dob
+%br
+= @patient.gender
+%br
+= @patient.allergies
+= link_to "Edit Patient", edit_patient_path
+= link_to "Delete Patient", patient_path, method: :delete

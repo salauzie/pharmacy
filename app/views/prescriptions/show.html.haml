@@ -1,0 +1,28 @@
+= @prescription.medication
+%br
+= @prescription.strength
+%br
+= @prescription.directions
+%br
+= @prescription.quantity
+%br
+= @prescription.days_supply
+%br
+= @prescription.doctor
+%br
+= @prescription.insurance
+%br
+= @prescription.DAW
+%br
+= @prescription.refills
+%br
+= @prescription.wait_time
+%br
+= @prescription.control
+%br
+= @prescription.ready_fill
+%br
+
+
+= link_to "Edit Prescription", edit_prescription_path
+= link_to "Delete Prescription", prescription_path, method: :delete

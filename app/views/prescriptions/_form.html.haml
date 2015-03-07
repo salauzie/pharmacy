@@ -1,0 +1,38 @@
+= form_for @prescription do |f|
+	= f.label :medication
+	= f.text_field :medication
+	%br
+	= f.label :strength
+	= f.text_field :strength
+	%br
+	= f.label :directions
+	= f.text_field :directions
+	%br
+	= f.label :quantity
+	= f.text_field :quantity
+	%br
+	= f.label :days_supply
+	= f.text_field :days_supply
+	%br
+	= f.label :doctor
+	= f.text_field :doctor
+	%br
+	= f.label :insurance
+	= f.text_field :insurance
+	%br
+	= f.label :DAW
+	= f.text_field :DAW
+	%br
+	= f.label :refills
+	= f.text_field :refills
+	%br
+	= f.label :wait_time
+	= f.text_field :wait_time
+	%br
+	= f.label :control
+	= f.text_field :control
+	%br
+	= f.label :ready_fill
+	= f.text_field :ready_fill
+	%br
+	= f.submit

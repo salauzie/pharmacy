@@ -1,0 +1,20 @@
+= form_for @patient do |f|
+	=f.label :first_name
+	=f.text_field :first_name
+	%br
+	=f.label :last_name
+	=f.text_field :last_name
+	%br
+	=f.label :dob
+	=f.date_field :dob, max: (Time.now)
+	%br
+	=f.label :gender
+	=f.radio_button :gender, 'Female', :checked => true
+	= label :gender, 'Female'
+	= f.radio_button :gender, 'Male'
+	= label :gender, 'Male'
+	%br
+	=f.label :allergies
+	=f.text_field :allergies
+	%br
+	= f. submit

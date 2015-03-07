@@ -14,7 +14,13 @@
 		.verification
 			%h1 Verification
 		%br	
-		.search	
-			%h1 Search					
-		%br	
-		= link_to "Add Patient", new_patient_path		
+		.patient
+			%h1 Patient
+			= link_to "Patients", patients_path
+			=link_to "Add Patient", new_patient_path
+		%br		
+		= link_to "Add Prescriptions", new_prescription_path
+		=	link_to "Prescriptions", prescriptions_path
+
+%br
+%br		
