@@ -1,12 +1,15 @@
-.jumbotron.pharm {
+.box1 {
 	background-image: image-url("pharmacy.jpg");
-	color: #8DA9C6;
+	border-radius: 5px;
 }
 
-.container.one {
+.container {
 	background: rgba(248, 248, 255, .8);
 	border-radius: 5px;
-	margin: 0 auto;
+	color: #8DA9C6;
+	text-align: center;
+	height: 100px;
+	padding: 75px;
 }
 
 body {
@@ -19,13 +22,13 @@ body {
 	background: #8DA9C6;
 	}
 
-.input,
-.verification,
-.production,
-.patient {
+
+
+.row1,
+.row2 {
 	background: rgba(248, 248, 255, .8);
 	border-radius: 5px;
-	margin: 0 auto;
-	max-width: 35%;
 	display: inline-block;
+	width: 300px;
+	vertical-align: top;
 	}

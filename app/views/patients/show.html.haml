@@ -1,4 +1,4 @@
-
+%br
 = @patient.first_name
 %br
 = @patient.last_name
@@ -10,3 +10,5 @@
 = @patient.allergies
 = link_to "Edit Patient", edit_patient_path
 = link_to "Delete Patient", patient_path, method: :delete
+= link_to "Add Prescription", new_patient_prescription_path(@patient)
+= link_to "Patient Profile", patient_prescriptions_path(@patient)

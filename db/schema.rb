@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150307230031) do
+ActiveRecord::Schema.define(version: 20150307233717) do
 
   create_table "patients", force: :cascade do |t|
     t.string   "first_name", limit: 255
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 20150307230031) do
     t.string   "wait_time",   limit: 255
     t.integer  "control",     limit: 4
     t.string   "ready_fill",  limit: 255
+    t.integer  "patient_id",  limit: 4
   end
 
 end

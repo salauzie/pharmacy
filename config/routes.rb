@@ -6,8 +6,9 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   root 'pharmacy#index'
   resources :medications
-  resources :patients
-  resources :prescriptions
+  resources :patients do
+    resources :prescriptions
+  end  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

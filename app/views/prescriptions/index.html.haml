@@ -1,3 +1,17 @@
 - @prescriptions.each do |f|
-  = link_to f.medication, prescription_path(f)
-  %br
+	.container
+		.innercontainer
+			= link_to f.medication + f.strength, patient_prescriptions_path(f)
+			= f.directions
+			%br
+			= "Quantity: "
+			= f.quantity
+			%br
+			= "Doctor: "
+			= f.doctor
+			= "Insurance: "
+			= f.insurance
+			%br
+			= "Refills: "
+			= f.refills
+	%br

@@ -1,26 +1,22 @@
-.jumbotron.pharm.text-center
-	.container.one
+.box1
+	.container
 		%h1 Pharmacy Workflow
 
 
-.container.text-center
-	.col-md-4
-		.input
-			%h1 Input
-		%br	
-		.production
-			%h1 Production
-		%br	
-		.verification
-			%h1 Verification
-		%br	
-		.patient
-			%h1 Patient
-			= link_to "Patients", patients_path
-			=link_to "Add Patient", new_patient_path
-		%br		
-		= link_to "Add Prescriptions", new_prescription_path
-		=	link_to "Prescriptions", prescriptions_path
+.box2
+	.row1
+		%h1 Input
+	.row2	
+		%h1 Production
+%br
+.box3	
+	.row1
+		%h1 Verification
+	.row2	
+		%h1 Patient
+		= link_to "Patients", patients_path
+		=link_to "Add Patient", new_patient_path
+		
 
 %br
 %br		

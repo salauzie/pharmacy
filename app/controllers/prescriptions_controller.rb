@@ -1,32 +1,39 @@
 class PrescriptionsController < ApplicationController
 	def index
-		@prescriptions = Prescription.all
+		@patient = Patient.find params[:patient_id]
+		@prescriptions = @patient.prescriptions.all
 	end
 
 	def show
-		@prescription = Prescription.find params[:id]
+		@patient = Patient.find params[:patient_id]
+		@prescription = @patient.prescriptions.find params[:id]
 	end
 
 	def new
-		@prescription = Prescription.new
+		@patient = Patient.find params[:patient_id]
+		@prescription = @patient.prescriptions.new
 	end
 
 	def create
-		@prescription = Prescription.create prescription_params
+		@patient = Patient.find params[:patient_id]
+		@prescription = @patient.prescriptions.create prescription_params
 		redirect_to root_path
 	end
 	
 	def edit
-		@prescription = Prescription.find params[:id]
+		@patient = Patient.find params[:patient_id]
+		@prescription = @patient.prescriptions.find params[:id]
 	end
 
 	def update
-	@prescription = Prescription.find params[:id]
-	@prescription.update_attributes prescription_params
-	redirect_to root_path
+		@patient = Patient.find params[:patient_id]	
+		@prescription = @patient.prescriptions.find params[:id]
+		@prescription.update_attributes prescription_params
+		redirect_to root_path
 	end	
 
 	def destroy
+		@patient = Patient.find params[:patient_id]
 		@prescription = Prescription.find params[:id]
 		@prescription.delete
 		redirect_to root_path
@@ -45,7 +52,8 @@ private
 			:refills,
 			:wait_time,
 			:control,
-			:ready_fill
+			:ready_fill,
+			patient_ids: []
 			)
 	end	
 end

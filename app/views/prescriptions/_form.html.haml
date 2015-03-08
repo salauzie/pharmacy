@@ -1,4 +1,4 @@
-= form_for @prescription do |f|
+= form_for [@patient, @prescription] do |f|
 	= f.label :medication
 	= f.text_field :medication
 	%br
